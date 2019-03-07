@@ -83,9 +83,9 @@ dateRangeInput <- function(inputId, label, start = NULL, end = NULL,
   if (inherits(min,   "Date"))  min   <- format(min,   "%Y-%m-%d")
   if (inherits(max,   "Date"))  max   <- format(max,   "%Y-%m-%d")
 
-  restored <- restoreInput(id = inputId, default = list(start, end))
-  start <- restored[[1]]
-  end <- restored[[2]]
+  #restored <- restoreInput(id = inputId, default = list(start, end))
+  #start <- restored[[1]]
+  #end <- restored[[2]]
 
   attachDependencies(
     div(id = inputId,
